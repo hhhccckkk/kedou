@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蝌蚪赚钱儿</string>
+    <string name="main_home">首页</string>
+     <string name="main_money">兑换</string>
+      <string name="main_user">用户</string>
+       <string name="main_more">更多</string>
+       
+       
+       
+       
+       
+</resources>
