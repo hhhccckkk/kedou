@@ -1,14 +1,16 @@
 package com.hck.money.ui;
 
-import com.hck.money.R;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioGroup;
-import android.widget.TabHost;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import cn.waps.AppConnect;
+
+import com.dianle.Dianle;
+import com.hck.money.R;
 
 public class MainActivity extends TabActivity implements
 		OnCheckedChangeListener {
@@ -23,10 +25,17 @@ public class MainActivity extends TabActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		initAds();
 		setContentView(R.layout.main);
 		init();
 		setLister();
 		server();
+	}
+	private void initAds()
+	{
+		AppConnect.getInstance(this);
+		Dianle.initDianleContext(this, "1a97234a7bba7e99e7dcaae157681eea");
+		Dianle.setUpdateOnlyWifi(false);//默认为false，设置true仅在WIFI下提示更新
 	}
 	private void init() {
 		setContentView(R.layout.main);
@@ -41,7 +50,7 @@ public class MainActivity extends TabActivity implements
 				.setContent(new Intent(this, HomeActivity.class));
 		tabHost.addTab(tabSpec);
 		tabSpec = tabHost.newTabSpec(DUI_HUAN).setIndicator(DUI_HUAN)
-				.setContent(new Intent(this, HomeActivity.class));
+				.setContent(new Intent(this, GetMoneyActivity.class));
 		tabHost.addTab(tabSpec);
 
 		tabSpec = tabHost.newTabSpec(USER).setIndicator(USER)

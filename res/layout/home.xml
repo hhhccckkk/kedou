@@ -2,7 +2,142 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/action_bar_bg" >
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+<FrameLayout 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    ><LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+         >
+
+        <Button
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/icon_expired_refund"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bt_shap"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="showAd1"
+            android:text="@string/home_bt1"
+            android:textSize="18sp" />
+
+        <Button
+             android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/icon_fore_refund"
+             android:background="@drawable/bt_shap"
+             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:onClick="showAd2"
+            android:text="@string/home_bt2"
+            android:textSize="18sp" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        >
+       <ImageButton 
+           android:layout_marginLeft="5dp"
+           android:visibility="gone"
+           android:id="@+id/imag1"
+           android:layout_height="20dp"
+           android:layout_width="20dp"
+           android:background="@drawable/user_power"
+           />
+       <ImageButton 
+            android:visibility="gone"
+           android:layout_marginLeft="60dp"
+           android:id="@+id/imag2"
+           android:layout_marginTop="10dp"
+           android:layout_height="20dp"
+           android:layout_width="20dp"
+           android:background="@drawable/user_power"
+           />
+       <ImageButton 
+            android:visibility="gone"
+           android:layout_alignParentRight="true"
+          android:layout_marginRight="100dp"
+           android:layout_centerInParent="true"
+           android:id="@+id/imag3"
+           android:layout_height="30dp"
+           android:layout_width="30dp"
+           android:background="@drawable/user_power"
+           />
+       <ImageButton 
+            android:visibility="gone"
+           android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+           android:id="@+id/imag4"
+           android:layout_height="30dp"
+           android:layout_width="30dp"
+           android:background="@drawable/user_power"
+           />
+       <ImageButton 
+            android:visibility="gone"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="40dp"
+           android:id="@+id/imag5"
+           android:layout_height="20dp"
+           android:layout_width="20dp"
+           android:background="@drawable/user_power"
+           />
+       <ImageButton 
+            android:visibility="gone"
+           android:layout_marginLeft="170dp"
+           android:id="@+id/imag6"
+           android:layout_height="25dp"
+           android:layout_width="20dp"
+           android:background="@drawable/user_power"
+           />
+       
+    </RelativeLayout>
+     <TextView
+         android:text="收拾收拾是色哥森哥色哥森哥森哥是色哥森哥色哥森哥三国杀该公司森哥是观赏鸽色哥森哥色哥森哥是"
+              android:layout_marginBottom="5dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+                android:ellipsize="marquee" 
+                android:focusable="true" 
+                android:focusableInTouchMode="true"
+                 android:marqueeRepeatLimit="marquee_forever" 
+                 android:scrollHorizontally="true"
+                  android:singleLine="true"
+                android:gravity="center"
+                android:id="@+id/noti"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF34B3"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+    </FrameLayout>
     
 
 </LinearLayout>

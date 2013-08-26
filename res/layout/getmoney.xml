@@ -2,7 +2,95 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical" >
-    
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/action_bar_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/shop_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/shop2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="您的余额为："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/shop2"
+            android:gravity="center"
+            android:text="333.09"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/icon_fore_refund"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_shap"
+            android:id="@+id/shop_bt1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="1Q币"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <Button
+             android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/icon_fore_refund"
+             android:background="@drawable/bt_shap"
+             android:layout_marginTop="10dp"
+            android:id="@+id/shop_bt2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="兑换花费" />
+
+        <Button
+             android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/icon_fore_refund"
+             android:background="@drawable/bt_shap"
+             android:layout_marginTop="10dp"
+            android:id="@+id/shop_bt3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="兑换花费" />
+
+        <Button
+             android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/icon_fore_refund"
+             android:background="@drawable/bt_shap"
+             android:layout_marginTop="10dp"
+            android:id="@+id/shop_bt4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="兑换花费" />
+    </LinearLayout>
 
 </LinearLayout>
