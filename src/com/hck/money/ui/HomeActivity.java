@@ -1,6 +1,7 @@
 package com.hck.money.ui;
 
 import java.util.Random;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -12,9 +13,13 @@ import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import cn.waps.AppConnect;
+import cn.waps.UpdatePointsNotifier;
+
 import com.dianle.Dianle;
 import com.hck.money.R;
-public class HomeActivity extends BaseActivity {
+import com.hck.money.date.UserDate;
+import com.hck.money.util.Toasts;
+public class HomeActivity extends BaseActivity implements UpdatePointsNotifier{
 	private ImageView png0, png1, png2, png3, png4, png5;
 	private ImageView pngs[] = { png0, png1, png2, png3, png4, png5 };
 	private int imageId;
@@ -35,6 +40,7 @@ public class HomeActivity extends BaseActivity {
 	protected void onResume() {
 		super.onResume();
 		setAnim();
+		AppConnect.getInstance(this).getPoints(this);
 	}
 
 	@Override
@@ -128,12 +134,36 @@ public class HomeActivity extends BaseActivity {
 		});
 
 	}
-
+	Handler handler2=new Handler()
+	{
+		public void handleMessage(android.os.Message msg) {
+			if (msg.what!=0) {
+				Toasts.toastPl(HomeActivity.this, "获取蝌蚪币: "+msg.what);
+			}
+		         
+		};
+	};
+  
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		handler.removeCallbacks(thread);
 		AppConnect.getInstance(this).close();
+	}
+
+	@Override
+	public void getUpdatePoints(String arg0, int arg1) {
+		int money=0;
+		if (UserDate.money<arg1) {
+			UserDate.money=arg1;
+			money=arg1-money;
+		}
+		handler2.sendEmptyMessage(money);
+	}
+
+	@Override
+	public void getUpdatePointsFailed(String arg0) {
+		handler.sendEmptyMessage(0);
 	}
 
 }

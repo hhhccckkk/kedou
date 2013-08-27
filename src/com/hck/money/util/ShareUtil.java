@@ -53,18 +53,18 @@ public class ShareUtil {
 
 		@Override
 		public void onApiComplete(String arg0) {
-		//	aInterface.share(1, "分享成功");
+	      aInterface.share(1, "分享成功");
 		}
 
 		@Override
 		public void onAuthComplete(Bundle arg0) {
-			//aInterface.share(1,"登陆成功");
+			aInterface.share(1,"登陆成功");
 		}
 
 		@Override
 		public void onError(BaiduShareException arg0) {
 			Log.i("hck", "shareUtil "+arg0);
-		//	aInterface.share(0, "分享失败");
+		aInterface.share(0, "分享失败");
 		}
 	}
 }

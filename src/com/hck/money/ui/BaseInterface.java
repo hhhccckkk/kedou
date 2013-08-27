@@ -1,5 +1,8 @@
 package com.hck.money.ui;
 
-public class BaseInterface {
+
+public interface BaseInterface {
+
+	void share(int i,String string);
 
 }

@@ -22,11 +22,25 @@
            <string name="user_help">帮助说明</string>
             <string name="user_nt">提示：第一次分享给好友，可以获取200蝌蚪币哦,赶紧分享吧！！！</string>
        <string name="home_nt">提示：试玩赚钱限制，赚钱一区每天最多下载试玩2个应用，赚钱2区，每天限制下载4个应用，
-           多下载可能获取不到积分，严重者以刷量处理，取消其使用和兑换资格。出现，没有应用可以下载，请明天在玩，谢谢您的支持</string>
+           多下载可能获取不到积分，严重者以刷量处理，取消其使用和兑换资格。安装应用后，签到也能获取蝌蚪币哦。出现，没有应用可以下载，请明天在玩，谢谢您的支持</string>
            <string name="shop_nt">提示：兑换礼物，请先完善您的信息。首次使用本软件，1Q币即可兑换额\n</string>
            <string name="shop_nt2">1000蝌蚪币==1元人民币</string>
            <string name="shop_mon1">兑换1Q币(首次使用满1Q币可兑换)</string>
            <string name="shop_mon2">兑换话费(满20元可兑换)</string>
            <string name="shop_mon3">兑换人民币(限支付宝满20元起)</string>
            <string name="shop_mon4">兑换Q币(满5Q币起)</string>
+         <string name="user_name">账号信息：</string>  
+         <string name="user_QQ">QQ号码:</string>  
+         <string name="user_ph">电话号码：</string>  
+         <string name="user_zf">支付宝账户：</string>  
+         <string name="user_money">总共兑换：</string>  
+           
+         <string name="help">软件属于免费软件，您可以通过下载app软件，进行简单使用，获取蝌蚪币，进行兑换，获取收入。应用下载后，至少使用30秒或者更多，
+             请更具提示进行，不然可能
+             获取不到蝌蚪币的情况。试玩过程中，有什么建议可以在app列表下面进行反馈，觉得好的app，大家可以保留在手机使用
+             ，如果真心觉得不好的app，大家需要在3天以后才能卸载，不然可能影响以后的试玩哦。
+             软件属于作者所有，请不要擅自使用软件相关资源\n 
+             提示：每天请不要试玩app数量过多哦，请尽量限制在6个以类。如果出现，没有可以供下载的app，请第2天再试。\n
+             提示：很多应用安装后可以获取相应蝌蚪币，安装后，签到也能获取蝌蚪币，所有，请不要马上卸载。
+             作者QQ:782244031,欢迎联系</string>  
 </resources>
