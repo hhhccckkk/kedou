@@ -5,12 +5,28 @@
     <string name="main_home">赚钱大厅</string>
      <string name="main_money">兑换中心</string>
       <string name="main_user">用户中心</string>
-       <string name="main_more">更多功能</string>
+       <string name="main_more">排行榜</string>
        
         <string name="home_bt1">赚钱一区</string>
          <string name="home_bt2">赚钱二区</string>
+         <string name="home_bt3">赚钱三区 团购就送人民币</string>
+         <string name="home_bt4">赚钱四区 稍后开放</string>
           <string name="shop_title">兑换中心</string>
+           <string name="more_title">赚钱排行榜</string>
        
-       
-       
+       <string name="user_title">用户中心</string>
+       <string name="user_order">我的订单</string>
+        <string name="user_info">用户信息</string>
+         <string name="user_share">分享给好友</string>
+          <string name="user_about">兑换记录</string>
+           <string name="user_help">帮助说明</string>
+            <string name="user_nt">提示：第一次分享给好友，可以获取200蝌蚪币哦,赶紧分享吧！！！</string>
+       <string name="home_nt">提示：试玩赚钱限制，赚钱一区每天最多下载试玩2个应用，赚钱2区，每天限制下载4个应用，
+           多下载可能获取不到积分，严重者以刷量处理，取消其使用和兑换资格。出现，没有应用可以下载，请明天在玩，谢谢您的支持</string>
+           <string name="shop_nt">提示：兑换礼物，请先完善您的信息。首次使用本软件，1Q币即可兑换额\n</string>
+           <string name="shop_nt2">1000蝌蚪币==1元人民币</string>
+           <string name="shop_mon1">兑换1Q币(首次使用满1Q币可兑换)</string>
+           <string name="shop_mon2">兑换话费(满20元可兑换)</string>
+           <string name="shop_mon3">兑换人民币(限支付宝满20元起)</string>
+           <string name="shop_mon4">兑换Q币(满5Q币起)</string>
 </resources>

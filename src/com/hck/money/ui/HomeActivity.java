@@ -1,4 +1,5 @@
 package com.hck.money.ui;
+
 import java.util.Random;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,10 +12,8 @@ import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import cn.waps.AppConnect;
-
 import com.dianle.Dianle;
 import com.hck.money.R;
-
 public class HomeActivity extends BaseActivity {
 	private ImageView png0, png1, png2, png3, png4, png5;
 	private ImageView pngs[] = { png0, png1, png2, png3, png4, png5 };
@@ -28,6 +27,7 @@ public class HomeActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home);
 		initView();
+		// new AlertDialog(this).alert("hshshhs");
 
 	}
 
@@ -36,11 +36,13 @@ public class HomeActivity extends BaseActivity {
 		super.onResume();
 		setAnim();
 	}
- @Override
-protected void onPause() {
-	super.onPause();
-	handler.removeCallbacks(thread);
-}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		handler.removeCallbacks(thread);
+	}
+
 	private void initView() {
 		thread = new A();
 		png0 = (ImageView) findViewById(R.id.imag1);
@@ -63,6 +65,10 @@ protected void onPause() {
 
 	public void showAd2(View view) {
 		Dianle.showOffers();
+	}
+
+	public void showAd3(View view) {
+		AppConnect.getInstance(this).showTuanOffers(this);
 	}
 
 	private void setAnim() {

@@ -2,7 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
     
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/action_bar_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/more_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+     <ListView 
+    android:id="@+id/show_local_list"
+    style="@style/list_style"
+    android:layout_width="fill_parent"
+    android:divider="#EBEBEB"
+    android:dividerHeight="1dp"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="#00000000" >
+</ListView>
 
 </LinearLayout>

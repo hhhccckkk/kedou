@@ -38,7 +38,7 @@
                 android:checked="true"
                 android:gravity="center"
                 android:text="@string/main_home"
-                android:paddingTop="5dp"
+                android:paddingTop="2dp"
                 android:textSize="12sp" />
 
             <RadioButton
@@ -50,7 +50,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                  android:text="@string/main_money"
-                android:paddingTop="5dp"
+               android:paddingTop="2dp"
                 android:textSize="12sp" />
             <RadioButton
                 android:drawableTop="@drawable/user_selector"
@@ -61,7 +61,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                  android:text="@string/main_user"
-                android:paddingTop="5dp"
+                android:paddingTop="2dp"
                 android:textSize="12sp" />
             <RadioButton
                 android:drawableTop="@drawable/more_selector"
@@ -72,7 +72,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:paddingTop="5dp"
+                android:paddingTop="2dp"
                 android:textSize="12sp" />
         </RadioGroup>
     </RelativeLayout>

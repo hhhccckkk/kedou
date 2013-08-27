@@ -7,5 +7,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="lib" path="libs/hck.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/dianle3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Baidu-SocialShare-SDK-Android-L3-1.4.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
